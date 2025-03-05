@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 128, 128, 0.5), rgba(0, 0, 0, 0.3)),
+    url(img/header_image.avif);
+    background-position:top;
+    background-size: cover;
+    height: 42vh;
+    text-align: center;
+    color: white;
+}
+
+header>div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header hgroup h1{
+    font-size: 5em;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+header hgroup p{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+header img{
+    width: 4rem;
+    height: 4rem;
+    padding: .5rem;
+    float: right;
+    
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 1rem;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#intro article img {
+    width:20rem;
+    height: 20rem;
+}
+
+#intro article hgroup{
+    color: rgb(0, 128, 128);
+    padding-left: 1rem;
+    width: 50%;
+}
+
+#intro article hgroup h2{
+    text-decoration: underline;
+    margin-left: -4rem;
+    margin-bottom: 2rem;
+}
+
+#intro > article{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    padding:4rem
+    
+}
+
+#cards{
+    display: flex;
+    text-align: center;
+    width : 100%
+
+}
+
+#cards >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    width: 50%;
+    padding: 2rem;
+}
+
+#cards img{
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+}
+
+#agencebanner{
+    background-image: linear-gradient(rgba(0, 128, 128, 0.5), rgba(0, 0, 0, 0.3)),
+    url(img/main_image.avif);
+    background-position:center;
+    background-size: cover;
+    height: 40vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#agencebanner hgroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 60%;
+    padding-left: 40%;
+}
+
+#agencebanner hgroup h2{
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+#agencebanner hgroup :not(h2){
+    padding-left: 3rem;
+}
+
+#agencebanner a{
+    color: white;
+    text-decoration: none;
+}
+
+#statsection{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15%;
+    
+    
+}
+
+#statsection h2{
+    color: rgb(0, 128, 128);
+    font-size: 2em;
+    
+}
+
+#statsection article{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    padding: 2rem;
+    
+}
+
+#statsection article hgroup{
+    display: flex;
+    flex-direction: column;
+}
+
+#statsection article > div{
+    display: flex;
+    width: 45%;
+}
+
+#statsection article>hgroup{
+    width: 45%;
+    margin-left: 3rem;
+}
+
+#statsection a{
+    color: white;
+    text-decoration: none;
+    background-color:rgb(0, 128, 128);
+    text-transform: uppercase;
+    
+    padding: .7rem 1rem;
+    width: fit-content;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+.stat{
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat h3{
+    color: rgb(0, 51, 102);
+    font-size: 2.5em;
+    margin-bottom: 1.5rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+    justify-content: space-evenly;
+    padding : 5rem
+}
+
+footer address{
+    width: 25%;
+    height: 50%;
+    font-style: normal;
+    padding-top: 2rem;
+}
+
+footer address *{
+     display: inline-block;  
+}
+
+footer address >p:first-of-type {
+    width: 70%;
+}
+
+
+
+
+
+footer address h2{
+    color: rgb(0, 128, 128);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+footer address > div {
+    margin-bottom: 1rem;
+}
+
+footer > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer img{
+    width: 4rem;
+    height: 4rem;
+}
