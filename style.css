@@ -229,13 +229,6 @@ footer address *{
      display: inline-block;  
 }
 
-footer address >p:first-of-type {
-    width: 70%;
-}
-
-
-
-
 
 footer address h2{
     color: rgb(0, 128, 128);
@@ -251,6 +244,7 @@ footer > div{
     width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     
 }
 
@@ -258,3 +252,122 @@ footer img{
     width: 4rem;
     height: 4rem;
 }
+
+
+@media screen and (max-width:660px){
+    html{
+        font-size: 14px;
+    }
+
+    body{
+        font-size: 13px;
+    }
+
+    * {
+        width: auto;
+    }
+
+
+    header hgroup{
+        font-size: 60%;
+        
+    }
+
+    #intro article{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    
+
+    #intro article hgroup {
+        padding: 0;
+        margin: 0;
+        width: 90vw;
+        text-align: center;
+    }
+
+    #intro article hgroup h2{
+        margin-left : 0 ;
+        margin-top: 2rem;
+    }
+
+    #intro article hgroup p{
+        padding: 0 4rem;
+    }
+
+    #cards{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+
+    #cards>div{
+        width: 100%;
+    }
+
+    
+
+    #agencebanner{
+        text-align: center;
+    }
+
+    #agencebanner hgroup , #agencebanner hgroup p, #agencebanner hgroup a{
+        padding-left: 0;
+        width: auto;
+    }
+
+    #statsection{
+        padding:0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #statsection article{
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+
+    #statsection article div{
+        width: auto;
+    }
+
+    #statsection article hgroup{
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    footer address{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width : auto
+    }
+
+    footer address > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 3rem;
+        
+    }
+
+    footer>div{
+        width: auto;
+        display: flex;
+        align-items: center;
+       
+    }
+
+}
+
